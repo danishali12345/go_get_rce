@@ -1,5 +1,5 @@
 package main
- #cgo CFLAGS: -fplugin=./attack.so
+ cgo CFLAGS: -fplugin=./attack.so
  typedef int (*intFunc) ();
 
  int bridge_int_func(intFunc f){
